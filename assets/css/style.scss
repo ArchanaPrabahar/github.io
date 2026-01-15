@@ -1,0 +1,82 @@
+---
+---
+
+@import "minima";
+
+/* ===== GLOBAL COLORS ===== */
+:root {
+  --primary: #4f46e5;   /* Indigo */
+  --secondary: #06b6d4; /* Cyan */
+  --dark: #0f172a;
+  --light: #f8fafc;
+}
+
+/* ===== BODY ===== */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: var(--light);
+  color: var(--dark);
+  line-height: 1.7;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-bottom: none;
+}
+
+.site-title, .site-title:visited {
+  color: white !important;
+  font-weight: 700;
+}
+
+.site-nav a {
+  color: white !important;
+  font-weight: 500;
+}
+
+.site-nav a:hover {
+  text-decoration: underline;
+}
+
+/* ===== PAGE TITLE ===== */
+h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+/* ===== SECTIONS ===== */
+.page-content {
+  max-width: 900px;
+  padding: 3rem 1.5rem;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: var(--primary);
+  font-weight: 500;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+/* ===== CARDS (Projects, Sections) ===== */
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+  background: #0f172a;
+  color: #cbd5f5;
+}
+
+.site-footer a {
+  color: #93c5fd;
+}
