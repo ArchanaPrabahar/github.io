@@ -1,17 +1,23 @@
 ---
-layout: home
-title: Archana Prabahar
+layout: default
 ---
 
-# Welcome to my Bioinformatics Blog
+<div class="hero">
+  <h1>Archana Prabahar’s Blog</h1>
+  <p>
+    Bioinformatics, Multi-omics, RNA-seq, scRNA-seq, and
+    Machine Learning for Biological Discovery
+  </p>
+</div>
 
-I am **Archana Prabahar, Ph.D.**, a bioinformatics scientist with 10+ years of experience in multi-omics, machine learning, and computational biology.  
+<div class="container">
+  <h2>Latest Posts</h2>
 
-Explore insights on **multi-omics data analysis, machine learning applications in genomics, and computational biology research** through my projects, CV, and blog posts.  
-
-## Quick Links
-
-- [About Me](/about/)  
-- [Curriculum Vitae](/cv/)  
-- [Projects](/projects/)  
-- [Blog](/blog/)
+  {% for post in site.posts limit:5 %}
+  <div class="card">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
+    <p>{{ post.excerpt }}</p>
+  </div>
+  {% endfor %}
+</div>
