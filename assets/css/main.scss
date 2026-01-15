@@ -1,34 +1,43 @@
----
----
+// main.scss
 
-@import "minima";
+// Colors
+$primary-color: #ff6f61;   // bright coral
+$secondary-color: #4db6ac; // teal
+$background-color: #fdf6f0; // light cream
+$text-color: #333;
 
-/* ===== GLOBAL COLORS ===== */
-:root {
-  --primary: #4f46e5;
-  --secondary: #06b6d4;
-  --dark: #0f172a;
-  --light: #f8fafc;
-}
-
+// Body styling
 body {
-  background: var(--light);
-  color: var(--dark);
-  font-family: "Inter", "Segoe UI", sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.site-header {
-  background: linear-gradient(90deg, var(--primary), var(--secondary));
-  border: none;
+// Links
+a {
+  color: $primary-color;
+  text-decoration: none;
+}
+a:hover {
+  color: $secondary-color;
 }
 
-.site-title, 
-.site-title:visited {
-  color: white !important;
-  font-weight: 700;
+// Header styling
+h1, h2, h3, h4 {
+  color: $primary-color;
+  font-weight: bold;
 }
 
-.site-nav a {
-  color: white !important;
-  font-weight: 500;
+// Cards for Projects
+.card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
 }
