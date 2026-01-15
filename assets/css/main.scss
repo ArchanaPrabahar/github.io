@@ -1,161 +1,197 @@
-/* =========================================
-   Modern, colorful theme for Archana Prabhar
-   Author-focused blog / portfolio
-   ========================================= */
+/* ======================================================
+   Premium Academic Blog Theme
+   Archana Prabhar · Bioinformatics & ML
+   ====================================================== */
 
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
-/* Color Palette */
-$bg-main: #0f172a;          // slate-900
-$bg-card: #111827;          // gray-900
-$primary: #38bdf8;          // sky-400
-$secondary: #a78bfa;        // violet-400
-$accent: #22c55e;           // green-500
-$text-main: #e5e7eb;        // gray-200
-$text-muted: #9ca3af;       // gray-400
+/* ---------------- Colors ---------------- */
+$bg-main: #0b1220;
+$bg-card: #0f172a;
+$primary: #38bdf8;
+$secondary: #a78bfa;
+$accent: #22c55e;
+$text-main: #e5e7eb;
+$text-muted: #94a3b8;
 $border-soft: rgba(255,255,255,0.08);
 
-/* Base Reset */
+/* ---------------- Reset ---------------- */
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   background: linear-gradient(180deg, #020617 0%, $bg-main 100%);
   color: $text-main;
-  line-height: 1.7;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Typography */
+/* ---------------- Typography ---------------- */
 h1, h2, h3, h4 {
   font-family: 'Playfair Display', serif;
-  color: #f9fafb;
-  letter-spacing: -0.02em;
+  color: #f8fafc;
+  letter-spacing: -0.015em;
 }
 
 h1 {
-  font-size: 2.6rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.9rem;
-  margin-top: 2.5rem;
+  font-size: 2rem;
+  margin: 3rem 0 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
 }
 
 p {
   font-size: 1.05rem;
   color: $text-main;
+  margin-bottom: 1.2rem;
 }
 
-/* Links */
+strong {
+  color: #f9fafb;
+}
+
+/* ---------------- Links ---------------- */
 a {
   color: $primary;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 a:hover {
   color: $secondary;
 }
 
-/* Header / Navbar */
+/* ---------------- Header ---------------- */
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 50;
+  z-index: 100;
   background: rgba(2, 6, 23, 0.85);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid $border-soft;
 }
 
 .site-nav {
   max-width: 1100px;
   margin: auto;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.5rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-.site-title {
+.site-title a {
   font-weight: 700;
   font-size: 1.2rem;
-  color: #f8fafc;
+  color: #f9fafb;
 }
 
-.site-nav a {
-  margin-left: 1.2rem;
+.site-links a {
+  margin-left: 1.5rem;
   font-size: 0.95rem;
   color: $text-muted;
 }
 
-.site-nav a:hover {
+.site-links a:hover {
   color: $primary;
 }
 
-/* Layout */
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 3rem 1.5rem;
+/* ---------------- Hero ---------------- */
+.hero {
+  padding: 5rem 1.5rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid $border-soft;
 }
 
-/* Cards (Blog posts, sections) */
+.hero h1 {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 1.2rem auto 0;
+  color: $text-muted;
+  font-size: 1.15rem;
+}
+
+/* ---------------- Layout ---------------- */
+.container {
+  max-width: 780px; /* perfect reading width */
+  margin: auto;
+  padding: 3.5rem 1.5rem;
+}
+
+/* ---------------- Blog Cards ---------------- */
 .card {
-  background: radial-gradient(120% 120% at 0% 0%, rgba(56,189,248,0.08), transparent 60%),
-              $bg-card;
+  background:
+    radial-gradient(140% 140% at 0% 0%, rgba(56,189,248,0.08), transparent 60%),
+    $bg-card;
   border: 1px solid $border-soft;
-  border-radius: 16px;
-  padding: 1.8rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  border-radius: 18px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.45);
+}
+
+.card h2 {
+  margin-top: 0;
 }
 
 .card:hover {
-  transform: translateY(-2px);
-  transition: transform 0.2s ease;
+  transform: translateY(-3px);
+  transition: transform 0.25s ease;
 }
 
-/* Blog list */
-.post-list article {
-  margin-bottom: 2.5rem;
-}
-
+/* ---------------- Blog Meta ---------------- */
 .post-meta {
   font-size: 0.85rem;
   color: $text-muted;
+  margin-bottom: 1rem;
 }
 
-/* Buttons */
+/* ---------------- Buttons ---------------- */
 .button {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
+  padding: 0.55rem 1.3rem;
   border-radius: 999px;
   background: linear-gradient(90deg, $primary, $secondary);
   color: #020617;
   font-weight: 600;
   font-size: 0.9rem;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .button:hover {
   opacity: 0.9;
 }
 
-/* Footer */
-.site-footer {
-  border-top: 1px solid $border-soft;
-  padding: 2rem 1.5rem;
-  text-align: center;
-  color: $text-muted;
-  font-size: 0.85rem;
+/* ---------------- Article Content ---------------- */
+article {
+  margin-bottom: 4rem;
 }
 
-/* Code blocks */
+article ul {
+  padding-left: 1.3rem;
+}
+
+article li {
+  margin-bottom: 0.6rem;
+}
+
+/* ---------------- Code ---------------- */
 pre, code {
   font-family: 'JetBrains Mono', monospace;
 }
@@ -163,17 +199,28 @@ pre, code {
 pre {
   background: #020617;
   border: 1px solid $border-soft;
-  border-radius: 12px;
-  padding: 1.2rem;
+  border-radius: 14px;
+  padding: 1.4rem;
   overflow-x: auto;
+  margin: 2rem 0;
 }
 
 code {
   color: $accent;
 }
 
-/* Responsive */
+/* ---------------- Footer ---------------- */
+.site-footer {
+  border-top: 1px solid $border-soft;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  color: $text-muted;
+  font-size: 0.85rem;
+}
+
+/* ---------------- Responsive ---------------- */
 @media (max-width: 768px) {
-  h1 { font-size: 2.1rem; }
-  h2 { font-size: 1.6rem; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.7rem; }
+  .container { padding: 2.5rem 1.2rem; }
 }
