@@ -8,44 +8,63 @@ permalink: /projects/
 
 <div class="card">
 
-### 🕒 Circadian scRNA-seq (AL vs CR)
-**Single-cell transcriptomics | Circadian biology**
+<h3>🕒 Circadian scRNA-seq (AL vs CR)</h3>
 
-Identified **rhythm-associated cell populations** by analyzing circadian clock gene expression across ad libitum and calorie-restricted conditions.
+<p><strong>Domain:</strong> Single-cell transcriptomics · Circadian biology</p>
 
-**Tools:** Seurat, Scanpy, DESeq2
+<p>
+Identified <strong>rhythm-associated cell populations</strong> by analyzing circadian
+clock gene expression across <strong>ad libitum</strong> and
+<strong>calorie-restricted</strong> conditions.
+</p>
 
-</div>
-
-<div class="card">
-
-### 🧪 Proteogenomics Machine Learning Model
-**RNA-seq → Protein abundance prediction**
-
-Developed a **machine learning framework** to predict protein abundance directly from RNA-seq data, improving proteomic inference.
-
-**Tools:** Python, scikit-learn, XGBoost, TensorFlow
+<p><strong>Tools:</strong> Seurat, Scanpy, DESeq2</p>
 
 </div>
 
 <div class="card">
 
-### 🔁 Nextflow Multi-omics Pipeline
-**Reproducible workflows | HPC**
+<h3>🧪 Proteogenomics Machine Learning Model</h3>
 
-Built fully automated **Nextflow pipelines** for transcriptomics and metagenomics with scalable deployment on high-performance computing clusters.
+<p><strong>Domain:</strong> RNA-seq → Protein abundance prediction</p>
 
-**Tools:** Nextflow, SLURM, Docker, Singularity
+<p>
+Developed a <strong>machine learning framework</strong> to predict protein abundance
+directly from RNA-seq data, improving <strong>proteomic inference</strong> and
+cross-omics integration.
+</p>
+
+<p><strong>Tools:</strong> Python, scikit-learn, XGBoost, TensorFlow</p>
 
 </div>
 
 <div class="card">
 
-### 🧬 Ligament Regeneration Multi-omics
-**Bulk RNA-seq | Exosomal RNA | Pathway analysis**
+<h3>🔁 Nextflow Multi-omics Pipeline</h3>
 
-Integrated **exosomal RNA and bulk RNA-seq** datasets to identify molecular regulators of ligament healing and regeneration.
+<p><strong>Domain:</strong> Reproducible workflows · High-performance computing (HPC)</p>
 
-**Tools:** edgeR, Cytoscape, Pathway enrichment
+<p>
+Built fully automated <strong>Nextflow pipelines</strong> for transcriptomics and
+metagenomics with scalable deployment on
+<strong>high-performance computing clusters</strong>.
+</p>
+
+<p><strong>Tools:</strong> Nextflow, SLURM, Docker, Singularity</p>
+
+</div>
+
+<div class="card">
+
+<h3>🧬 Ligament Regeneration Multi-omics</h3>
+
+<p><strong>Domain:</strong> Bulk RNA-seq · Exosomal RNA · Pathway analysis</p>
+
+<p>
+Integrated <strong>exosomal RNA</strong> and <strong>bulk RNA-seq</strong> datasets to
+identify molecular regulators of <strong>ligament healing and regeneration</strong>.
+</p>
+
+<p><strong>Tools:</strong> edgeR, Cytoscape, Pathway enrichment</p>
 
 </div>
