@@ -1,26 +1,23 @@
 ---
 layout: default
+title: Home
 ---
 
-<section class="hero hero-home">
-  <div class="hero-inner">
-    <h1>Bioinformatics & Machine Learning</h1>
-    <p>
-      Writing about <strong>multi-omics</strong>, <strong>RNA-seq</strong>,
-      <strong>scRNA-seq</strong>, and <strong>machine learning</strong>
-      for biological discovery.
-    </p>
-  </div>
-</section>
+<div class="hero">
+  <h1>Bioinformatics &<br>Machine Learning</h1>
+  <p>
+    Writing about multi-omics, RNA-seq, scRNA-seq,
+    and machine learning for biological discovery.
+  </p>
+</div>
 
 <div class="container">
-  <h2>Latest Posts</h2>
-
-  {% for post in site.posts limit:5 %}
   <div class="card">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <div class="post-meta">{{ post.date | date: "%B %d, %Y" }}</div>
-    <p>{{ post.excerpt }}</p>
+    <h2>Welcome</h2>
+    <p>
+      I am Archana Prabahar, working at the intersection of bioinformatics,
+      machine learning, and computational biology, with a focus on
+      multi-omics data integration and biological discovery.
+    </p>
   </div>
-  {% endfor %}
 </div>
