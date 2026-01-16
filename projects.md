@@ -49,25 +49,3 @@ Integrated **exosomal RNA and bulk RNA-seq** datasets to identify molecular regu
 **Tools:** edgeR, Cytoscape, Pathway enrichment
 
 </div>
-
-<div class="card">
-
-### 🤖 Seq2Pheno AI/ML Pipeline
-**Phenotype prediction | Deep learning**
-
-Developed a **Snakemake-based AI pipeline** using TensorFlow models to impute tissue-level phenotypes from transcriptomic data.
-
-**Tools:** Snakemake, TensorFlow, Python
-
-</div>
-
-<div class="card">
-
-### 📊 MacVis Visualization Tool
-**Macrophage phenotype exploration**
-
-Created a lightweight visualization tool for macrophage phenotypes with **GO, KEGG, and Circos** integration.
-
-**Tools:** R, ggplot2, Cytoscape, Circos
-
-</div>
